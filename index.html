@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Women's Day! 🌸</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div id="flower-container"></div>
+
+    <button id="music-btn" class="glass-button floating-music">
+        <i class="fas fa-play"></i> <span class="music-text">Play Vibe</span>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-beautiful-dream-493.mp3" type="audio/mpeg">
+    </audio>
+
+    <main class="container">
+        <!-- 1. Hero Section -->
+        <section class="screen hero-screen section-hide" id="hero">
+            <div class="content-wrapper glass-panel">
+                <div class="badge">March 8th <i class="fas fa-spa"></i></div>
+                <h1 class="title">Happy<br>Women's Day</h1>
+                <p class="subtitle">To all the amazing, strong, and unstoppable women out there.</p>
+                <div class="scroll-indicator">
+                    <p>Scroll for some truths <i class="far fa-face-smile-wink"></i></p>
+                    <i class="fas fa-chevron-down bounce"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Appreciation Section -->
+        <section class="screen appreciation-screen section-hide" id="appreciation">
+            <h2 class="section-title">Women run homes, offices...<br><span>and sometimes the whole world.</span></h2>
+            <div class="cards-grid">
+                <div class="glass-card stat-card" style="transition-delay: 0.1s;">
+                    <div class="icon-wrapper"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Strong</h3>
+                    <p>Carrying the weight of expectations and still smiling.</p>
+                </div>
+                <div class="glass-card stat-card" style="transition-delay: 0.2s;">
+                    <div class="icon-wrapper"><i class="fas fa-heart"></i></div>
+                    <h3>Caring</h3>
+                    <p>Always making sure everyone else has eaten first.</p>
+                </div>
+                <div class="glass-card stat-card" style="transition-delay: 0.3s;">
+                    <div class="icon-wrapper"><i class="fas fa-brain"></i></div>
+                    <h3>Intelligent</h3>
+                    <p>Remembering that one specific thing you lost 3 months ago.</p>
+                </div>
+                <div class="glass-card stat-card" style="transition-delay: 0.4s;">
+                    <div class="icon-wrapper"><i class="fas fa-bolt"></i></div>
+                    <h3>Multitaskers</h3>
+                    <p>Cooking, texting, and planning a vacation simultaneously.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Funny Truth Section 1 -->
+        <section class="screen meme-screen section-hide" id="meme-1">
+            <div class="content-wrapper">
+                <h2 class="section-title">Now, the funny part <i class="far fa-face-laugh-squint"></i></h2>
+                <div class="imessage-ui glass-panel">
+                    <div class="message sender">
+                        <p>Are you ready? We need to leave soon!</p>
+                        <span class="time">6:00 PM</span>
+                    </div>
+                    <div class="message receiver">
+                        <p>Yes! I'll be ready in 5 minutes! <i class="far fa-face-grin-beam-sweat"></i></p>
+                        <span class="time">6:01 PM</span>
+                    </div>
+                    <div class="message sender"
+                        style="animation-delay: 2s; opacity: 0; animation: fadeIn 0.5s forwards 1.5s;">
+                        <p>It's been 45 minutes...</p>
+                        <span class="time">6:46 PM</span>
+                    </div>
+                    <div class="message receiver typing"
+                        style="animation-delay: 3s; opacity: 0; animation: fadeIn 0.5s forwards 3s;">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <p class="meme-caption">The universal measurement of female time.</p>
+            </div>
+        </section>
+
+        <!-- 4. Scooter meme -->
+        <section class="screen scooter-screen section-hide" id="scooter">
+            <div class="content-wrapper glass-panel">
+                <h2 class="section-title">The "Scooty" Paradox <i class="fas fa-motorcycle"></i></h2>
+                <div class="indicator-animation">
+                    <div class="scooter-wrapper">
+                        <div class="scooter-icon"><i class="fas fa-motorcycle"
+                                style="font-size: 3.5rem; color: var(--secondary);"></i></div>
+                        <div class="blink left-blink"><i class="fas fa-arrow-left" style="color: #ffd700;"></i></div>
+                    </div>
+                    <div class="path-container">
+                        <svg width="200" height="150" viewBox="0 0 200 150">
+                            <path class="arrow-path right-turn" d="M 100 150 C 100 80, 180 50, 200 50" fill="none"
+                                stroke="var(--pink-accent)" stroke-width="4" stroke-dasharray="10,10" />
+                        </svg>
+                        <div class="confused-icon"><i class="fas fa-person-circle-question"
+                                style="font-size: 2.5rem; color: var(--text-muted);"></i></div>
+                    </div>
+                </div>
+                <ul class="funny-list">
+                    <li><i class="fas fa-check-circle"></i> Left indicator is ON</li>
+                    <li><i class="fas fa-check-circle"></i> Looking left in the mirror</li>
+                    <li><i class="fas fa-times-circle" style="color:var(--pink-accent)"></i> Takes a sharp right turn
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> Everyone else on the road is confused</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Viral Meme Section -->
+        <section class="screen tea-meme-screen section-hide" id="tea-meme">
+            <div class="content-wrapper">
+                <div class="meme-box glass-panel">
+                    <div class="meme-row">
+                        <div class="meme-text">
+                            <h4>Her:</h4>
+                            <p>"I don't want anything for Women's Day, don't worry about it."</p>
+                        </div>
+                    </div>
+                    <div class="meme-row split">
+                        <div class="meme-text">
+                            <h4>Also Her, 3 days later:</h4>
+                            <p><em>Giving the silent treatment because you actually didn't get anything.</em> <i
+                                    class="far fa-face-rolling-eyes"></i></p>
+                        </div>
+                    </div>
+                    <div class="meme-footer">
+                        <div class="men-tea">
+                            <span>Men:</span>
+                            <div class="tea-cups"><i class="fas fa-mug-hot"></i> <i class="fas fa-mug-hot"></i></div>
+                            <span>"Women."</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="meme-caption">It's a trap, boys. Always buy the flowers.</p>
+            </div>
+        </section>
+
+        <!-- 6. Real Respect Section -->
+        <section class="screen respect-screen section-hide" id="respect">
+            <div class="content-wrapper glass-panel glow-panel">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <h2 class="playfair">Jokes apart...</h2>
+                <p class="deep-text">Women are the reason homes stay bright, families stay strong, dreams continue, and
+                    the world moves forward with empathy.</p>
+                <div class="heart-pulse"><i class="fas fa-heart" style="color: #ff4d85;"></i></div>
+                <h3 class="final-greeting">Happy Women's Day</h3>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
